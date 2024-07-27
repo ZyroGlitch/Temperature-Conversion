@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CONVERSION</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-500 h-screen">
+    <div class="flex justify-center items-center h-screen">
+        <div class="card lg:card-side bg-base-100 shadow-xl">
+            <div class="card-body">
+                <div class="flex justify-between">
+                    <h2 class="card-title text-center font-mono font-bold text-4xl mb-4">Temperature Conversion</h2>
+                    <img src="img/thermometer.png" alt="image" class="size-12 object-contain">
+                </div>
+
+                <input type="number"
+                    class="border-2 border-slate-500 border-solid rounded-lg h-12 text-2xl font-bold p-4 mb-4"
+                    id="number">
+
+                <div class="card-actions justify-center mb-8">
+                    <button class="btn btn-neutral w-full text-2xl" id="convertBtn">CONVERT</button>
+                </div>
+
+                <div class="flex justify-center items-center space-x-6">
+                    <input type="radio" name="radio1" class="radio radio-info" id="celsius" />
+                    <h2 class="text-2xl font-bold font-mono">Celsius -> Fahrenheit</h2>
+                </div>
+
+                <div class="flex justify-center items-center space-x-6 mb-8">
+                    <input type="radio" name="radio1" class="radio radio-info" id="fahrenheit" />
+                    <h2 class="text-2xl font-bold font-mono">Fahrenheit -> Celsius</h2>
+                </div>
+
+                <h2 class="text-4xl font-bold text-center font-mono" id="output"></h2>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
